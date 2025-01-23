@@ -9,12 +9,6 @@ export default defineConfig({
   plugins: [vue(), vueDevTools()],
   server: {
     port: 3000,
-    proxy: {
-      "/api": {
-        target: "https://innovative-wiry-eyeliner.glitch.me",
-        changeOrigin: true,
-      },
-    },
   },
   resolve: {
     alias: {

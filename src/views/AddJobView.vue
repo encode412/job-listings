@@ -34,7 +34,7 @@ const handleSubmit = async () => {
     },
   };
   try {
-    const response = await axios.post(`/api/jobs`, newJob);
+    const response = await axios.post(`${import.meta.env.VITE_BASE_URL}/jobs`, newJob);
     toast.success("Job added successfully");
     router.push(`/job/${response.data.id}`);
   } catch (error) {
