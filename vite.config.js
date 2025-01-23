@@ -13,7 +13,6 @@ export default defineConfig({
       "/api": {
         target: "https://innovative-wiry-eyeliner.glitch.me",
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, ""),
       },
     },
   },
